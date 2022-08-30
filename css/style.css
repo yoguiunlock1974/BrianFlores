@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=DynaPuff&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.logo {
+    height: 100px;
+}
+
+
+
+  .hero{
+    background-image: url(../img/clothes-1839935_1920.jpg);
+    height: 90vh;
+  }
+
+

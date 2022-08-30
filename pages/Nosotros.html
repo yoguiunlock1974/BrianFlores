@@ -5,37 +5,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/8cbbb1dd3d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
    
-    <link rel="stylesheet" href="/styles.css/nototros.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>OliviaShopRosario</title>
 </head>
-<header>
-       
-    <nav>
-        <img src="/img/logo.jpg" alt="Logo OliviaShop">
-        <a href=index.html>Inicio</a> 
-        <a href=Nosotros.html>Nosotros</a>
-        <a href=galeria.html>Galeria</a>
-        <a href=blog.html>Blog</a>
-        <a href=contacto.html>Contacto</a>
-      </nav>
-</header>
 
-<section>
-<footer class="pie">
-    <p>Todos los derechos reservados</p>
-    
-        <a   href="https://www.facebook.com/Olivia-Shop-Rosario-113474190835368" class="fab fa-facebook-f"></a> </li>
        
-        <a   href="https://www.instagram.com/olivia.shop_rosario/" class="fab fa-instagram"></a>
-           
-       <a   href="" class="fab fa-twitter"> </a>
-    
-    <p>OliviaShop</p>
-</footer>
-</section>
+<nav class="navbar navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="logo"> 
+      <img class="logo" src="../img/logo.jpg">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Bienvenidos</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./pages/contacto.html">Contactos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/galeria.html">Galeria</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="./pages/nosotros.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Nosotros
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="./pages/blog.html">Blog</a></li>
+              
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="Buscar">
+          <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+          <button class="btn btn-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
 
+      <section class="nosotros">
+         <div class="row mt-5">
+            <div class="col-md-8 d-flex flex-column justify-content-center">
+              <h1> Nosotros</h1>
+              <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet dignissimos enim illo veniam nisi sapiente reprehenderit ullam numquam dolor. Doloremque facere corporis dolore possimus quasi, culpa itaque commodi dignissimos impedit!
+              Aliquam illo deserunt itaque officiis, ullam nisi maiores quis odio, autem facere modi laboriosam pariatur explicabo, odit repudiandae repellat! Omnis quisquam ipsam blanditiis cumque suscipit nesciunt, deserunt vitae odit non.
+              Aliquid dolores id a vitae. Laboriosam quam quaerat, consequatur necessitatibus consectetur odio sit sed? Magni ipsum nihil suscipit obcaecati odit quisquam quam magnam, ex consequatur molestiae expedita itaque dolore deleniti.
+              Ad ea officiis dolor, molestias hic vel dolores ex ipsum quis beatae impedit iure nesciunt in velit nobis corporis ab reiciendis quae sunt voluptas non cumque aut harum cum. Soluta!
+              Dignissimos quae ipsam veniam pariatur minima nostrum perspiciatis reiciendis ullam et modi corporis amet culpa laudantium autem accusantium, veritatis delectus, iste nemo neque. Iure placeat provident minima at cum voluptatibus.
+              Dignissimos et consequuntur tempora veniam quidem blanditiis maiores porro praesentium repudiandae fuga nihil nesciunt quis mollitia deleniti laborum, illo nobis, omnis dolore sequi tempore? Alias consectetur aliquam possimus numquam accusamus.</p>
+              
+
+            </div>
+            <div class="col-md-4 d-flex aling-items-center mt-5 pt-5">
+                <img class="mw-100 rounded " src="../img/fondocorazon.jpg" alt="nosotros">
+            </div>
+         
+      </section>
+
+      <footer class="pie text-bg-secondary p-3 bg-dark mt-5" > 
+        <div class="card text-center ">
+          <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+              <li class="nav-item ">
+                <a class="nav-link " aria-current="true" href="https://www.instagram.com/olivia.shop_rosario/">Instagram</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="https://www.facebook.com/Olivia-Shop-Rosario-113474190835368">Facebook</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link "> twitter</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text-bg-dark">&copy;2022 Derechos Reservados .</h5>
+            <p class="card-text text-bg-primary">ventas por mayos & por menor !</p>
+            <a href="#" class="btn btn-primary"> Contactanos al Wsp</a>
+          </div>
+        </div>
+      </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
    

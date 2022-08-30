@@ -1,77 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://kit.fontawesome.com/8cbbb1dd3d.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="./galeria.css">
+  <link rel="stylesheet" href="../css/style.css">
   <title>OliviaShopRosario</title>
 </head>
 
 <body>
-
-  <nav class="nav">
-    <img src="/img/logo.jpg" alt="Logo OliviaShop">
-    <a href=index.html>Inicio</a>
-    <a href=Nosotros.html>Nosotros</a>
-    <a href=galeria.html>Galeria</a>
-    <a href=blog.html>Blog</a>
-    <a href=contacto.html>Contacto</a>
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"> 
+        <img class="logo" src="../img/logo.jpg">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Bienvenidos</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./contacto.html">Contactos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="./nosotros.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Nosotros
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="./blog.html">Blog</a></li>
+                
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="Buscar">
+            <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn btn-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </nav>
-  <h1 class="animate__animated animate__bounce">OliviaShop Rosario</h1>
-  <div class="container">
-    <div class="card1">
-      <img src="/img/imagen3.jpg" alt="">
-      <p>$768</p>
-      <button>Comprar</button>
-    </div>
-    <div class="card4">
-      <img src="/img/ropa2.jpg" alt="">
-      <p>$890</p>
-      <button>Comprar</button>
-    </div>
-    <div class="card5">
-      <img src="/img/ropas4.jpg" alt="">
-      <p>$1000</p>
-      <button>Comprar</button>
-    </div>
-    <div class="card">
-      <img src="/img/ropas5-jpg.jpg" alt="">
-      <p>Comprar</p>
-      <button>Comprar</button>
-    </div>
-    <div class="card2">
-      <img src="/img/ropas6.jpg" alt="">
-      <p>$2345</p>
-      <button>Comprar</button>
-    </div>
-    <div class="card3">
-      <img src="/img/people-2589809_1920.jpg" alt="">
-      <p>$7656</p>
-      <button>Comprar</button>
-    </div>
-  </div>
 
+  <section>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="../img/ropa1.jpg" class="card-img-top" alt="foto de camisas">
+          <div class="card-body">
+            <h5 class="card-title">Camisas </h5>
+            <p class="card-text">Todos los talles y variedad de colores .</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">50 en stock</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../img/ropa2.jpg" class="card-img-top" alt="bodys">
+          <div class="card-body">
+            <h5 class="card-title">Bodys</h5>
+            <p class="card-text">Todos los talles y variedad de colores .</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">240 en stock</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../img/ropas3.jpg" class="card-img-top" alt="camperas y short de seda">
+          <div class="card-body">
+            <h5 class="card-title">Camperas y Short de Seda</h5>
+            <p class="card-text">Todos los talles y variedad de colores .</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">36 en stock</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="../img/ropas4.jpg" class="card-img-top" alt="short">
+          <div class="card-body">
+            <h5 class="card-title">Short de Colores</h5>
+            <p class="card-text">Todos los talles y variedad de colores ..</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">100 en stock</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../img/ropas5-jpg.jpg" class="card-img-top" alt="conjuntos">
+          <div class="card-body">
+            <h5 class="card-title">Conjuntos</h5>
+            <p class="card-text">Todos los talles y variedad de colores .</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">200 en stock</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../img/ropas10.jpg" class="card-img-top" alt="Remeras y calsas">
+          <div class="card-body">
+            <h5 class="card-title">Remeras Y Calsas</h5>
+            <p class="card-text">Todos los talles y variedad de colores .</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">40 en stock</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="../img/ropas7.jpg" class="card-img-top" alt="Remeras largas y jogin">
+          <div class="card-body">
+            <h5 class="card-title">Remeras Largas Y Jogin</h5>
+            <p class="card-text">Todos los talles y variedad de colores .</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">100 en stock</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../img/ropas8.jpg" class="card-img-top" alt="buzos top">
+          <div class="card-body">
+            <h5 class="card-title">Busos top</h5>
+            <p class="card-text">Todos los talles y variedad de colores .</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">no hay stock</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../img/ropas9.jpg" class="card-img-top" alt="camperas y jeans">
+          <div class="card-body">
+            <h5 class="card-title">Camperas y Jeans</h5>
+            <p class="card-text">Todos los talles y variedad de colores .</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">200 en stock</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <footer class="pie text-bg-secondary p-3">
-    <p>&copy; Todos los derechos reservados</p>
-    <form>
-      <i class="fa-brands fa-facebook"></i>
-    </form>
-    <form action="">
-      <i class="fa-brands fa-instagram"></i>
-    </form>
-
-    <form action="">
-      <i class="fa-brands fa-twitter"></i>
-    </form>
-
-
-    <p> <strong> OliviaShop</strong></p>
+  <footer class="pie text-bg-secondary p-3 bg-dark" > 
+    <div class="card text-center ">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+          <li class="nav-item ">
+            <a class="nav-link " aria-current="true" href="https://www.instagram.com/olivia.shop_rosario/">Instagram</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="https://www.facebook.com/Olivia-Shop-Rosario-113474190835368">Facebook</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link "> twitter</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title text-bg-dark">&copy;2022 Derechos Reservados .</h5>
+        <p class="card-text text-bg-primary">ventas por mayos & por menor !</p>
+        <a href="#" class="btn btn-primary"> Contactanos al Wsp</a>
+      </div>
+    </div>
   </footer>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 
 </html>
