@@ -10,10 +10,21 @@
 }
 
 
-
-  .hero{
-    background-image: url(../img/clothes-1839935_1920.jpg);
+h1{
+   font-family:'Lobster', cursive;
+}
+  .hero {
+   background-image: url(../img/clothes-1839935_1920.jpg);
     height: 90vh;
   }
 
+  .pie {
+    background-color: #50445a;
+  }
 
+  .container{
+    background-color: gray ;
+    font-family: 'Dancing Script',;
+  }
+   
+ 
